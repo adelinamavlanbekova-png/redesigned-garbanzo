@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Burger Studio — лучшие бургеры в городе</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Burger Studio</a>
+      <nav class="main-nav">
+        <a href="#menu">Меню</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <button id="cart-btn" class="cart-btn">Корзина (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Настоящий вкус. Каждый день.</h1>
+        <p>Свежие булочки, сочные котлеты и авторские соусы — прямо к вашему столу.</p>
+        <a href="#menu" class="btn">Посмотреть меню</a>
+      </div>
+    </section>
+
+    <section id="menu" class="container menu-section">
+      <h2>Меню</h2>
+      <div id="menu-list" class="menu-grid"></div>
+    </section>
+
+    <section id="about" class="container about-section">
+      <h2>О нас</h2>
+      <p>Мы — маленькая бургерная с большим сердцем. Готовим вручную из свежих продуктов и делаем акцент на вкусе и качестве.</p>
+    </section>
+
+    <section id="contacts" class="container contacts-section">
+      <h2>Контакты</h2>
+      <p>Адрес: ул. Примерная, 1<br>Телефон: +7 (900) 000-00-00<br>Email: info@burgerstudio.example</p>
+    </section>
+  </main>
+
+  <div id="cart-modal" class="cart-modal hidden" role="dialog" aria-hidden="true">
+    <div class="cart-panel">
+      <button id="close-cart" class="close-btn">&times;</button>
+      <h3>Корзина</h3>
+      <div id="cart-items"></div>
+      <div class="cart-summary">
+        <div>Итого: <strong id="cart-total">0 ₽</strong></div>
+        <button id="checkout-btn" class="btn primary">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Burger Studio — 2025. Сделано для курсового проекта.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
